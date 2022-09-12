@@ -1,38 +1,54 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   align-items: center;
+ 
+  
+  background-color: rgb(212, 205, 196);
+}
+
+.App h1{
+  font-family: 'Dela Gothic One', cursive;
+  font-weight: 400;
+  display: inline-block
+}
+
+.fret{
+  border: solid 2px black;
+  margin-top: 7px;
+  width: 300px;
+}
+
+.string{
+  height: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: gray;
+  position: relative;
+  user-select: none;
+}
+
+.string:hover{
+  cursor: pointer;
+}
+
+img{
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.final-guitar{
+  display: flex;
+  margin: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

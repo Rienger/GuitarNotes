@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Guitar from './Guitar';
+import React from 'react'
 
 function App() {
+
+  const restart = () => {
+    
+  }
+
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>This is for me to take notes of chords that i don't know</h1>
+   
+    <div className='final-guitar'>
+
+    <Guitar />
+    {/* <Guitar/>
+    <Guitar/> */}
+    </div>
+
+    <button onClick={restart}>RESTART</button>
+    
+    
+    
+
     </div>
   );
 }
